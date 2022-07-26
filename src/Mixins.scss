@@ -1,0 +1,10 @@
+@mixin background{
+    background: #5F86CE;
+    background: -moz-linear-gradient(left, #5F86CE 0%, #1C6EA4 53%, #20B7C5 100%);
+    background: -webkit-linear-gradient(left, #5F86CE 0%, #1C6EA4 53%, #20B7C5 100%);
+    background: linear-gradient(to right, #5F86CE 0%, #1C6EA4 53%, #20B7C5 100%); 
+}
+
+@mixin boxShadow{
+    
+}

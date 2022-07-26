@@ -1,0 +1,115 @@
+.title h2{
+  font-size: 4rem;
+}
+
+.title p{
+  font-size: 1.5rem;
+}
+
+.img-cover{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+    overflow: hidden;
+   
+  }
+  
+  .img-cover img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5%;
+    border: 3.1px solid var(--clr-primary-5);
+    box-shadow: 3px 3px 5px 0px var(--clr-primary-5);
+  -webkit-box-shadow: 3px 3px 5px 0px var(--clr-primary-5);
+  -moz-box-shadow: 3px 3px 5px 0px var(--clr-primary-5);
+  transition: 0.7s ease;
+    &:hover{
+      transform: scale(0.9);
+    }
+  }
+
+   .btn-bot{
+    align-content: center;
+    color: var(--clr-primary-5);
+    font-size:150%;
+    font-weight: 900;
+    
+  }
+
+  .btn-cover{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+    
+  }
+  
+  
+  .btn-cover button{
+    padding: 1rem 4rem;
+  background: transparent;
+  transition: 0.7s ease;
+  border-radius: 8%;
+    & a{
+      color: var(--clr-primary-1);
+     
+      text-transform: uppercase;
+      transition: 0.5s;
+      letter-spacing: 4px;
+      overflow: hidden;
+   
+    }
+  }
+   
+  .btn-cover button:hover {
+    cursor: pointer;
+    background: var(--clr-primary-5);
+    color: #050801;
+    box-shadow: 0 0 5px var(--clr-primary-5),
+                0 0 25px var(--clr-primary-5),
+                0 0 50px var(--clr-primary-5),
+                0 0 200px var(--clr-primary-5);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+     text-shadow: 4px 4px 2px rgba(248,248,248,0.6);
+  }
+
+@media only screen and (max-width: 1040px) {
+ .port-container{
+       align-self: center;
+        width: 100%;
+      }
+    
+    .port-btn{
+      width: 98%;
+      font-size: 2vw;
+    }
+    .title h2{
+      font-size: 3vw;
+    }
+    .port-img{
+       width: auto;
+      }
+  }
+  
+
+@media only screen and (max-height: 780px){
+    .img-cover .port-img{
+     height: 30vh;
+    }
+  
+    .btn-cover button{
+      padding: 2vh 9vh;
+    }
+    .title h2{
+        font-size: 5vw;
+      }
+      .title p{
+          font-size: 2.5vw;
+      }
+
+      .btn-cover button{
+        padding: 0.5rem 4rem;
+        
+      }
+  }

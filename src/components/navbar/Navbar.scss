@@ -1,0 +1,129 @@
+.navbar {
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+}
+
+.navbar .container{
+    max-width: 1240px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & div h1{
+        color: #ffd11ebd;
+        background-color: rgb(6, 6, 6);
+        border-radius: 20%;
+        padding: 0.5rem;
+    }
+}
+
+.navbar .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar ul .link{
+    margin-right: 1rem;
+}
+
+.hamburger{
+    display: none;
+    color: wheat;
+    margin-right: 1rem;
+}
+
+.navbar .icon {
+    color: #f4eeff;
+    font-size: 2rem;
+}
+
+.navbar h1, a {
+    color: #f4eeff;
+}
+
+.container h1{
+    margin-left: 1rem ;
+}
+
+@media screen and (max-width: 940px){
+    .hamburger{
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        flex-direction: column;
+        justify-content: start !important;
+        gap: 2vh;
+        
+       // justify-content: space-evenly!important;
+        
+        top: 90px;
+        left: -100%;
+        width: 100%;
+        height:calc(100vh - 90px);
+        background-color: #000;
+        transition: 0.5s;
+       z-index: 2;
+       
+    }
+
+  
+
+ .nav.active{
+     left: 0;
+ }
+
+  .nav a{
+      font-size: 2rem;
+  }
+}
+
+.navbar ul li a,
+.navbar ul .link {
+    &:link,
+    &:visited {
+        display: inline-block;
+        
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, black,rgb(9, 9, 9), #040a36,blue,rgb(81, 255, 7), rgb(0, 41, 130),rgb(25, 108, 160),yellow);
+       // background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(249, 246, 246) 50%);
+        background-size: 330%;
+        transition: all .4s;
+    }
+    
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: black;
+        transform: translateX(1rem);
+    }
+}
+@media screen and (max-height: 600px){
+    .nav a{
+        font-size: 3vh;
+        
+    }
+}
+@media screen and (max-height: 500px){
+    .nav{
+        top: 55px;
+        height: 400px;
+    }
+    nav{
+        height: auto!important;  
+    }
+    .nav a{
+        font-size: 5vh;
+    }
+  
+}

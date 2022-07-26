@@ -1,0 +1,121 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --clr-primary-1: rgb(255, 255, 255);
+  --clr-primary-5: #5316d9;
+  --clr-primary-10: hsl(186, 100%, 94%);
+  --transition: all 0.3s linear;
+  --max-width: 1170px;
+  --spacing: 0.1rem;
+}
+
+.port-h2 {
+  text-align: center;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  max-height: 70vh;
+  margin: 5rem auto;
+  max-width: var(--max-width);
+  color: white;
+}
+
+.port-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+aside {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
+
+.port-btn {
+  align-self: center;
+  width: 70%;
+  color: var(--clr-primary-1);
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  letter-spacing: var(--spacing);
+  margin: 0.5rem 0;
+  transition: var(--transition);
+  cursor: pointer;
+  padding: 0.25rem 0;
+  line-height: 1;
+  outline-color: var(--clr-primary-10);
+}
+
+.btn-container a {
+  text-align: center;
+}
+
+.port-btn:hover {
+  color: var(--clr-primary-5);
+}
+
+.active-btn {
+  color: var(--clr-primary-5);
+  box-shadow: 0 2px var(--clr-primary-5);
+}
+
+@media only screen and (max-width: 1040px) {
+  .section {
+    margin: 0;
+    display: flex;
+    height: calc(100vh - 90px);
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .port-btn {
+    font-size: calc(1vw + 1vh);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .btn-container {
+    margin-right: 0rem;
+  }
+}
+@media only screen and (max-height: 900px) {
+  .section {
+    margin: 5vh auto !important;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .section {
+    margin: 0 auto !important;
+  }
+
+  .port-btn {
+    margin: 0.5vh 0;
+  }
+}
+@media only screen and (max-height: 450px) {
+  .section {
+    height: 450px;
+  }
+}
